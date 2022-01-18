@@ -148,7 +148,5 @@ def rps():
 
 def ranint():
     return random.randrange(1,7)
-    
 
-
-#print (ranint())
+print ("Random number is: ", ranint())
