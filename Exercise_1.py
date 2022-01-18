@@ -1,7 +1,7 @@
 #Exercise 1
 #Nico Kranni
 
-import random, math
+import random,math
 #Task 1
 print ("Hello")
 
@@ -73,9 +73,62 @@ def ariprog():
     print(sum(sumofterms))
     print(sum(sqrofterms))
 
-
+#Task 8
 def rps():
-    items=["Rock", "Paper", "Scissor"]
-    opponent=random.choice(items)
+    items=["Rock", "Paper", "Scissors"] #List where from computer chooses
+    cw=0 #Computer wins
+    uw=0 #User wins
+    while cw<3 and uw<3:
+        try:
+            user=str(input("Give your choice (Rock, Paper, Scissors): ")) #What does user choose
+            computer=random.choice(items) #Computer chooses from list what it plays
+            print("Computer's choice is", computer)
 
-rps()
+        except ValueError:#If not str gives this
+            print ("Has to be Rock, Paper or Scissors")
+            continue
+
+        if user == computer:
+            print(f"It's a tie!")
+            print ("Computer", cw, "You", uw, "\n" )
+
+        elif user == "Rock":
+            if computer == "Scissors":
+                uw+=1
+                print("Rock smashes Scissors!") 
+                print ("Computer", cw, "You", uw,"\n")
+
+            else:
+                cw+=1
+                print("Paper covers Rock!")
+                print ("Computer", cw, "You", uw,"\n")
+                
+        elif user == "Paper":
+            if computer == "Rock":
+                uw+=1
+                print("Paper covers Rock!")
+                print ("Computer", cw, "You", uw,"\n")
+
+            else:
+                cw+=1
+                print("Scissors cuts Paper!")
+                print ("Computer", cw, "You", uw,"\n")
+
+        elif user == "Scissors":
+            if computer == "Paper":
+                uw+=1
+                print("Scissors cuts Paper!")
+                print ("Computer", cw, "You", uw,"\n")
+
+            else:
+                cw+=1
+                print("Rock smashes Scissors!")
+                print ("Computer", cw, "You", uw,"\n")
+
+        else:
+            print ("Input has to be Rock, Paper or Scissors") #If input is wrong
+
+    if cw>uw:
+        print ("You lost!")
+    else:
+        print("You won!")
