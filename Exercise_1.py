@@ -1,6 +1,8 @@
 #Exercise 1
 #Nico Kranni
 
+
+
 import random,math
 #Task 1
 print ("Hello")
@@ -11,8 +13,8 @@ def numlist(): #Start of function
     while len(emptynum)<10:#Min 10 items
         emptynum.append(int(input()))
     else:
-        emptynum.sort()
-        print("Arranged list: ", *emptynum, sep=",")#After then items prints list of inputs. And we also sort them for task 3
+        emptynum.sort()#Sort them for task 3
+        print("Arranged list: ", *emptynum, sep=",")#After ten items prints list of inputs. 
     emptynum=[(random.randrange(0,999))for item in emptynum] #Replaces every element in list with random one between 0 and 999
     emptynum.sort()
     print(*emptynum, sep=",") #Sort the list for task 3
@@ -22,17 +24,16 @@ def strlist(): #Start of function
     while len(emptystr)<10:#Min 10 items
         emptystr.append(str(input()))
     else:
-        print("Strings: ", *emptystr,sep=",")#After then items prints list of inputs
+        emptystr.sort()
+        print("Strings: ", *emptystr,sep=",")#After ten items prints list of inputs
 
 
-#numlist()
-#strlist()
 
 #Task 4, 5 and 6
 def readint(): #Start of function
-    negint=0
-    evenint=0
-    listsum=[]
+    negint=0 #To hold negative integers
+    evenint=0 #To hold even integers
+    listsum=[] #To hold numbers and use it for sum.
     while True:
         try:
             number=int(input("Please give an integer: "))
@@ -63,23 +64,28 @@ def readint(): #Start of function
 
 #Task 7
 def ariprog():
-    terms=0
-    termsl=[]
+    terms=0 
+    termsList=[]
     sumofterms=[]
     sqrofterms=[]
-    x=int(input("Give maximum value: "))
-    numbers=range(3, x, 3)
-    for i in numbers:
-        terms+=1
-        termsl.append(i)
-        sumofterms.append(i)
-        sqrofterms.append((i*i))
-    print("Procession is: ",*termsl)
-    print ("Number of terms is: ", terms)
-    print("Sumf of terms is: ",sum(sumofterms))
-    print("Sum of squared terms is: ", sum(sqrofterms))
+    x=0
+    try:
+        x=int(input("Give maximum value: ")) #Needs user input(int)
+        numbers=range(3, x, 3) 
+        for i in numbers:
+            terms+=1 #Adds 1 for everytime it checks term
+            termsList.append(i) #Adds the term
+            sumofterms.append(i) #Adds the term to list so it can be summed
+            sqrofterms.append((i*i)) #Same as previous bu squared
+        print("Procession is: ",*termsList)
+        print ("Number of terms is: ", terms)
+        print("Sumf of terms is: ",sum(sumofterms)) 
+        print("Sum of squared terms is: ", sum(sqrofterms))
+    except ValueError:
+        print("Input needs to be number")
+    
 
-ariprog()
+
 
 
 
