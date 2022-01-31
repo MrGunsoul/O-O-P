@@ -1,0 +1,15 @@
+input grade:
+
+if grade < 60:
+    print Fail / 0
+if grade < 72 and > 60:
+    print 1
+if grade < 72 and > 60:
+    print 2
+if grade < 96 and > 83:
+    print 3
+if grade < 108 and > 95:
+    print 4
+else:
+    print 5
+
