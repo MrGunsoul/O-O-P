@@ -27,7 +27,6 @@ class Coin:
                     print ("Tails")
                 else:
                     print("Heads")
-            
             else:
                 heads=samples.count(0)
                 tails=samples.count(1)

@@ -1,3 +1,4 @@
+Task 2
 input grade:
 
 if grade < 60:
@@ -13,3 +14,48 @@ if grade < 108 and > 95:
 else:
     print 5
 
+Task 4
+Grades=[]
+input=name
+input=grade
+append grade into Grades
+Ask if want to insert more
+
+If yes loop
+
+If no
+print average of grades
+
+Task 9
+import
+time now:
+time for alert:
+
+if time now==time for alert:
+    alert
+else:
+    time now+=1
+
+
+if first_dice < second_dice and first dice < third dice
+    roll second dice
+    roll third dice
+
+
+if first_dice == second_dice
+    roll first dice
+    roll second dice
+
+if second dice < third_dice and < second dice
+    roll second dice
+    roll third dice
+
+
+if second dice == third dice
+    
+
+if third dice < first_dice and < second dice
+
+if third dice == first dice
+    roll first dice
+    roll second dice
