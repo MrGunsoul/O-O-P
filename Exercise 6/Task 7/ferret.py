@@ -1,9 +1,9 @@
-import mammal
+import wild
 
-class Ferret(mammal.Mammal):
-    def __init__(self, ID, species, name, size, weight, noise, diet, owner, age):
+class Ferret(wild.Wild):
+    def __init__(self, ID, species, name, size, weight, noise, diet, owner, wild_animal, age):
 
-        mammal.Mammal.__init__(self, ID, species, name, size, weight, noise, diet, owner)
+        wild.Wild.__init__(self, ID, species, name, size, weight, noise, diet, owner, wild_animal)
 
         self.__age=age
 

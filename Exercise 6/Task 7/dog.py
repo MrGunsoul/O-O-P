@@ -1,9 +1,9 @@
-import mammal
+import domestic
 
-class Dog(mammal.Mammal):
-    def __init__(self, ID, species, name, size, weight, noise, diet, owner, tail_length):
+class Dog(domestic.Domestic):
+    def __init__(self, ID, species, name, size, weight, noise, diet, owner,domestic_animal, tail_length):
 
-        mammal.Mammal.__init__(self, ID, species, name, size, weight, noise, diet, owner)
+        domestic.Domestic.__init__(self, ID, species, name, size, weight, noise, diet, owner,domestic_animal)
 
         self.__tail_length=tail_length
 

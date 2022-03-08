@@ -13,7 +13,7 @@ class Mammal:
 
 
     def __str__(self):
-        return "State of the Mammal:\nID: {0}\nSpecies: {1}\nName: {2}\nSize: {3}\nWeight: {4}\nSound they make: {5}\nDiet: {6} \nOwner {7}".format(self.__ID,self.__species,self.__name,self.__size,self.__weight, self.__noise, self.__diet,self.__owner)
+        return "\nState of the Mammal:\nID: {0}\nSpecies: {1}\nName: {2}\nSize: {3}\nWeight: {4}\nSound they make: {5}\nDiet: {6} \nOwner: {7}".format(self.__ID,self.__species,self.__name,self.__size,self.__weight, self.__noise, self.__diet,self.__owner)
     
     # Accessors
     def getID(self):

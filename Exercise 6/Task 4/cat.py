@@ -1,9 +1,9 @@
-import mammal
+import domestic
 
-class Cat(mammal.Mammal):
-    def __init__(self, ID, species, name, size, weight, noise, diet, owner, lives):
+class Cat(domestic.Domestic):
+    def __init__(self, ID, species, name, size, weight, noise, diet, owner, domestic_animal, lives):
 
-        mammal.Mammal.__init__(self, ID, species, name, size, weight, noise, diet, owner)
+        domestic.Domestic.__init__(self, ID, species, name, size, weight, noise, diet, owner, domestic_animal)
 
         self.__lives=lives
 
